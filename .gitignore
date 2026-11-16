@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+# Do not publish firmware, driver binaries, dumps or private runtime logs.
+*.bin
+*.rom
+*.cap
+*.fd
+*.aml
+*.dsl
+*.sys
+*.exe
+*.dll
+*.jsonl
+*.log
+*.zip
+*.tar.gz
+private/
+local/
+Huawei-Windows-Fan-Audit*/

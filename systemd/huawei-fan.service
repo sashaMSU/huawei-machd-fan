@@ -1,0 +1,16 @@
+[Unit]
+Description=Huawei MACHD-WXX9 EC 1.67 fan table
+After=systemd-modules-load.service
+
+[Service]
+Type=exec
+ExecStartPre=/usr/sbin/modprobe acpi_call
+ExecStart=/usr/bin/python3 -u /usr/local/lib/huawei-fan/huawei_fan_table.py run
+Restart=on-failure
+RestartSec=5
+RestartPreventExitStatus=2
+TimeoutStopSec=120
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

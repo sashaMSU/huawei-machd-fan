@@ -1,0 +1,195 @@
+{
+  "expected_ec_image_sha256": "365f55352a55ed82ffd015b721ce996e09515da93d67f87299020108e2156aa7",
+  "expected_image_note": "Hash of the analyzed BIOS component, not a runtime flash measurement",
+  "dmi": {
+    "sys_vendor": "HUAWEI",
+    "product_name": "MACHD-WXX9",
+    "board_name": "MACHD-WXX9-PCB",
+    "bios_version": "1.67",
+    "bios_date": "11/10/2022"
+  },
+  "ec_version_bytes_decimal": [
+    1,
+    67,
+    0
+  ],
+  "provenance": "Configuration from an owner-provided pre-modification read-only snapshot; not vendor documentation. No firmware image or personal runtime log is included.",
+  "automatic_curve": {
+    "basis": "NB2757 EC V01.67.0 from the owner's hash-validated BIOS component",
+    "config_pointer": "0x0008403C",
+    "config_raw_hex": "06000000a440080048e17a3f0ad7a33c06000000bc400800000000000100000000002c42000048420000204200003c42041000000300000001000000484108000000000000003c42000048429c410800b4410800cc410800e4410800fc4108003200000014000000",
+    "integer_fields": {
+      "sensor_count": 6,
+      "step_count": 6,
+      "enable_sensor_a_id": 0,
+      "enable_sensor_b_id": 1,
+      "minimum_rpm_when_enabled": 4100,
+      "rpm_preset_count": 3,
+      "active_rpm_preset": 1,
+      "low_high_switch_sensor_id": 0,
+      "max_up_step_rpm": 50,
+      "max_down_step_rpm": 20
+    },
+    "float_fields": {
+      "filter_old_weight": 0.9800000190734863,
+      "filter_new_weight": 0.019999999552965164,
+      "enable_sensor_a_on_C": 43.0,
+      "enable_sensor_b_on_C": 50.0,
+      "enable_sensor_a_off_C": 40.0,
+      "enable_sensor_b_off_C": 47.0,
+      "low_high_switch_down_C": 47.0,
+      "low_high_switch_up_C": 50.0
+    },
+    "pointers": {
+      "sensor_ids": "0x000840A4",
+      "threshold_rows": "0x000840BC",
+      "rpm_rows": "0x00084148",
+      "low_targets": "0x0008419C",
+      "high_targets": "0x000841B4",
+      "kp": "0x000841CC",
+      "ki": "0x000841E4",
+      "kd": "0x000841FC"
+    },
+    "sensor_ids": [
+      8,
+      0,
+      1,
+      10,
+      11,
+      9
+    ],
+    "sensor_meanings_from_1_67": [
+      "CPU TP00 (EC source; not assumed identical to Linux coretemp)",
+      "SEN1 CPU Temperature (physical location not established)",
+      "SEN2 Charger temperature",
+      "constant 38 C",
+      "constant 38 C",
+      "constant 30 C"
+    ],
+    "threshold_row_pointers": [
+      "0x000840D0",
+      "0x000840E8",
+      "0x00084100",
+      "0x00084118",
+      "0x00084130"
+    ],
+    "thresholds_C": [
+      [
+        75.0,
+        47.0,
+        63.0,
+        999.0,
+        999.0,
+        999.0
+      ],
+      [
+        90.0,
+        50.0,
+        68.0,
+        999.0,
+        999.0,
+        999.0
+      ],
+      [
+        95.0,
+        54.0,
+        75.0,
+        999.0,
+        999.0,
+        999.0
+      ],
+      [
+        100.0,
+        56.0,
+        80.0,
+        999.0,
+        999.0,
+        999.0
+      ],
+      [
+        102.0,
+        60.0,
+        85.0,
+        999.0,
+        999.0,
+        999.0
+      ]
+    ],
+    "rpm_row_pointers": [
+      "0x00084154",
+      "0x0008416C",
+      "0x00084184"
+    ],
+    "rpm_presets": [
+      [
+        3600,
+        3900,
+        4450,
+        5000,
+        5600,
+        7300
+      ],
+      [
+        4400,
+        5000,
+        5500,
+        6100,
+        7000,
+        7600
+      ],
+      [
+        4200,
+        4600,
+        5400,
+        6400,
+        7100,
+        7800
+      ]
+    ],
+    "low_targets": [
+      75.0,
+      47.0,
+      63.0,
+      999.0,
+      999.0,
+      999.0
+    ],
+    "high_targets": [
+      90.0,
+      50.0,
+      68.0,
+      999.0,
+      999.0,
+      999.0
+    ],
+    "kp": [
+      5.0,
+      3.0,
+      3.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "ki": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "kd": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "matches_firmware_initial_values": true,
+    "differences_from_firmware_initial_values": {},
+    "config_pointer_matches_static_allocation": true,
+    "address_layout_matches_static_allocation": true,
+    "snapshot_note": "Configuration header and all arrays were read twice and matched; reads are sequential, not atomic"
+  }
+}
